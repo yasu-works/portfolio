@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* --------------------------------------
+Wrapper
+-------------------------------------- */
+
+.wrapper--top {
+    background-image: url(img/IMG_6916.jpeg);
+    background-position: center;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+/* --------------------------------------
+Header
+-------------------------------------- */
+#header {
+    width: 100%;
+    padding: 50px 50px;
+    height: 100vh;
+    position: relative;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 40px;
+}
+
+.menu li a {
+    color: #888;
+    font-size: 1.05rem;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border: solid 1px #888;
+    border-radius: 50%;
+}
+
+.icon img {
+    border-radius: 50%;
+}
+
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #888;
+    /* margin: 0 auto; */
+    width: 60%;
+    text-align: center;
+}
+
+.site-title h1 {
+    letter-spacing: 3px;
+}
+
+.site-title span {
+    letter-spacing: 2px;
+}
+
+/* ---------------------------------
+Contents
+--------------------------------- */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    height: 300px;
+    border: solid 1px #888;
+}
+
+.works {
+    width: 45%;
+    margin-bottom: 130px;
+}
+
+.works h2 {
+    margin: 10px 0 5px 10px;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.works span {
+    font-size: 0.85rem;
+    margin-left: 10px;
+    color: #888;
+}
+
+/* ---------------------------------
+footer
+--------------------------------- */
+#footer {
+    text-align: center;
+    background-color: #dcdcdc;
+    height: 100px;
+}
+
+#footer span {
+    color: #888;
+    font-size: 0.875rem;
+    line-height: 7.5em;
+}
+
+/* ---------------------------------
+レスポンシブ : SP
+--------------------------------- */
+
+@media screen and (max-width: 768px) {
+    #header {
+        padding: 30px 30px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li a {
+        font-size: 0.875rem;
+    }
+
+    .menu li {
+        margin-left: 18px;
+    }
+
+    .site-title {
+        top: 50%;
+        width: 80%;
+    }
+
+    .site-title h1 {
+        letter-spacing: 1.5px;
+        font-size: 1.6rem;
+    }
+
+    .site-title span {
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .works {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .content img {
+        height: 210px;
+    }
+
+    .wrapper {
+        margin-bottom: 50px;
+    }
+
+    #footer span {
+        font-size: 0.675rem;
+        line-height: 9em;
+    }
+    
+}
+
+/* ---------------------------------
+レスポンシブ : タブレット
+--------------------------------- */
+
+@media screen and (max-width: 950px) {
+    .menu li a {
+        font-size: 1.6rem;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        max-width: 780px;
+        margin-bottom: 50px;
+    }
+
+    .content img {
+        height: 230px;
+    }
+}
