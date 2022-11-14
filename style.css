@@ -213,7 +213,7 @@ footer
 レスポンシブ : タブレット
 --------------------------------- */
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
     .menu li a {
         font-size: 1.6rem;
     }
@@ -230,4 +230,4 @@ footer
     .content img {
         height: 230px;
     }
-}
+} */
