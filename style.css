@@ -147,6 +147,11 @@ about
     margin-bottom: 30px;
 }
 
+.profile-name,
+.profile-text {
+    color: #888;
+}
+
 /* ---------------------------------
 footer
 --------------------------------- */
